@@ -13,6 +13,10 @@ html {
   scroll-behavior: smooth;
 }
 
+.topnav {
+  display: none;
+}
+
 /*-------------------------------------------------------------------*/
 /*-------------------------------------------------------------------*/
 /*-----------------------------HEADER--------------------------------*/
@@ -58,7 +62,7 @@ html {
 .caption {
   position: absolute;
   left: 0;
-  top: 50%;
+  top: 25vw;
   width: 100%;
   text-align: center;
   color: #000;
@@ -351,7 +355,7 @@ html {
 
 .foto-map{
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
 }
 
 .section1 {
@@ -399,3 +403,149 @@ html {
   box-shadow: 10px 24px 39px -32px rgba(0, 0, 0, 0.75);
 }
 
+/*-------------------------------------------------------------------*/
+/*-------------------------------------------------------------------*/
+/*--------------------------MOBILE HEADER----------------------------*/
+/*-------------------------------------------------------------------*/
+/*-------------------------------------------------------------------*/
+
+@media only screen and (max-width: 760px){
+  .caption span{
+    font-size: 40px;
+  }
+
+  .topnav {
+    height: 3vh;
+  }
+}
+
+
+/*-------------------------------------------------------------------*/
+/*-------------------------------------------------------------------*/
+/*-----------------------TABLET/MOBILE HEADER------------------------*/
+/*-------------------------------------------------------------------*/
+/*-------------------------------------------------------------------*/
+
+@media only screen and (max-width: 1025px){
+  .about-me {
+    display: none;
+  }
+  
+  .topnav {
+    overflow: hidden;
+    position: relative;
+    display: flex;
+    height: 11vh;
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 30px;
+    -webkit-box-shadow: 1px 10px 10px -10px rgba(0,0,0,0.75);
+    -moz-box-shadow: 1px 10px 10px -10px rgba(0,0,0,0.75);
+    box-shadow: 1px 10px 10px -10px rgba(0,0,0,0.75);
+  }
+  
+  .topnav #myLinks {
+    display: none;
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  .topnav img {
+    width: 5vw;
+    height: 5vw;
+    border-radius: 1vw;
+    padding: 0.5vw;
+    -webkit-transition: 0.2s ease-in;
+    -moz-transition: 0.2s ease-in;
+    -o-transition: 0.2s ease-in;
+    transition: 0.2s ease-in;
+  }
+
+  .topnav img:hover {
+    background-color: #9ab079;
+  }
+  
+  
+  .topnav a {
+    color: #202020;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    display: block;
+    -webkit-transition: 0.2s ease-in;
+    -moz-transition: 0.2s ease-in;
+    -o-transition: 0.2s ease-in;
+    transition: 0.2s ease-in;
+  }
+  
+  .topnav a.icon {
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+  }
+  
+  .topnav a:hover {
+    color: black;
+  }
+  
+  .active {
+    background-color: #04AA6D;
+    color: white;
+  }
+
+
+  .portfolio{
+    width: 90%;
+    margin: 100px auto;
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 20px;
+  }
+  
+  .portfolio h3{
+    font-size: 30px;
+    margin-bottom: 20px;
+    text-align: center;
+    padding: 20px 10px;
+    background-color: #9ab079;
+    border-radius: 20px;
+    color: white;
+  }
+
+  .opdracht{
+    display: flex;
+    flex-direction: column;
+    gap: 2%;
+  }
+  
+  .foto-map{
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .section1 {
+    width: 90%;
+    margin: 1vw auto 1vw auto;
+    display: flex;
+  }
+  
+  .section1 img{
+    width: 23%;
+    
+  }
+  
+  .section2{
+    margin: 1vw 0 1vw 0;
+    width: 90%;
+    display: flex;
+    align-self: center;
+    text-align: center;
+  }
+  
+  .section2 p{
+    line-height: 25px;
+  }
+}
