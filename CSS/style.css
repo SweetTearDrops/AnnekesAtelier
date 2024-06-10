@@ -1,0 +1,401 @@
+/*-------------------------------------------------------------------*/
+/*-------------------------------------------------------------------*/
+/*------------------------------FONTS--------------------------------*/
+/*-------------------------------------------------------------------*/
+/*-------------------------------------------------------------------*/
+
+/* https://fonts.google.com/selection/embed */
+
+
+html {
+  background-color: #f7f7f7;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+
+/*-------------------------------------------------------------------*/
+/*-------------------------------------------------------------------*/
+/*-----------------------------HEADER--------------------------------*/
+/*-------------------------------------------------------------------*/
+/*-------------------------------------------------------------------*/
+
+.header {
+  overflow: hidden;
+  background-color: #f1f1f1;
+  padding: 20px 10px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.parallax-header {
+  /* The image used */
+  background-image: url("../Assets/intro_image2.jpg");
+
+  /* Set a specific height */
+  min-height: 50vw;
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.header-overlay{
+  background-color: rgba(255, 255, 255, 0.17);
+  min-height: 50vw;
+  width: 100vw;
+  z-index: 2;
+}
+
+@media only screen and (max-device-width: 1366px) {
+  .parallax {
+    background-attachment: scroll;
+  }
+}
+
+.caption {
+  position: absolute;
+  left: 0;
+  top: 50%;
+  width: 100%;
+  text-align: center;
+  color: #000;
+}
+
+.caption span{
+  font-size: 70px;
+  color: #fff;
+  padding: 18px;
+  letter-spacing: 2px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 550;
+  font-style: normal;
+  background-color: rgba(13, 13, 13, 0.783);
+  border-radius: 20px;
+  border: 5px solid #9ab079;
+  -webkit-box-shadow: 10px 10px 35px 5px rgba(0,0,0,0.75);
+  -moz-box-shadow: 10px 10px 35px 5px rgba(0,0,0,0.75);
+  box-shadow: 10px 10px 35px 5px rgba(0,0,0,0.75);
+}
+
+.about-me {
+  width: 100vw;
+  height: 10vh;
+  background-color: #f5f5f5;
+  z-index: 5;
+  box-shadow: -8px 7px 13px -13px rgb(0, 0, 0);
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  position: sticky;
+  top: 0;
+}
+
+.about-me-header {
+  display: flex;
+  flex-direction: row;
+  width: 100vw;
+  left: 0;
+}
+
+.about-me-header ul {
+  width: 100vw;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  height: 10vh;
+  text-align: center;
+}
+
+.button-hover {
+  -webkit-transition: color 0.2s ease-in;
+  -moz-transition: color 0.2s ease-in;
+  -o-transition: color 0.2s ease-in;
+  transition: color 0.2s ease-in;
+  color: #0d0d0d;
+  
+}
+
+.button-hover:hover {
+  color: #9ab079;
+  cursor: pointer;
+}
+
+.button-hover:active {
+  color: #9ab079;
+}
+
+.about-me-header ul li {
+  width: 16vw;
+  padding-top: 1.3em;
+  font-size: 25px;
+  text-decoration: none;
+}
+
+.about-me-header a{
+  text-decoration: none;
+}
+
+/*-------------------------------------------------------------------*/
+/*-------------------------------------------------------------------*/
+/*----------------------------INTRO IMAGE----------------------------*/
+/*-------------------------------------------------------------------*/
+/*-------------------------------------------------------------------*/
+
+.intro-image {
+  background-image: url("../Assets/intro_image2.jpg");
+  height: 750px;
+  width: 100vw;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 0px -100px;
+  filter: grayscale(0.9);
+}
+
+@media screen and (max-width: 500px) {
+  .header a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+
+  .header-right {
+    float: none;
+  }
+}
+
+.divider {
+  width: 100vw;
+  height: 30vh;
+  margin: 10vh 0;
+}
+
+.d-img1 {
+  background-image: url(../Assets/beeld19.jpg);
+  background-position: 0% 42%;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.d-img2 {
+  background-image: url(../Assets/beeld13.jpg);
+  background-position: 0% 30%;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+/*-------------------------------------------------------------------*/
+/*-------------------------------------------------------------------*/
+/*-----------------------------CATEGORIES----------------------------*/
+/*-------------------------------------------------------------------*/
+/*-------------------------------------------------------------------*/
+
+.image-container {
+  width: 99vw;
+  display: flex;
+  margin-top: 50px;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.categorie {
+  width: 17%;
+  background-color: #9ab079;
+  color: white;
+  border-radius: 20px;
+  -webkit-box-shadow: 10px 24px 39px -32px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 10px 24px 39px -32px rgba(0, 0, 0, 0.75);
+  box-shadow: 10px 24px 39px -32px rgba(0, 0, 0, 0.75);
+  padding: 15px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.categorie:hover {
+  color: black;
+  background-color: #c5e09c;
+  scale: 1.07;
+  box-shadow: none;
+}
+
+.subtitle {
+  margin: 20px;
+  text-align: center;
+  font-size: 30px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+/*-------------------------------------------------------------------*/
+/*-------------------------------------------------------------------*/
+/*----------------------------OVER ANNEKE----------------------------*/
+/*-------------------------------------------------------------------*/
+/*-------------------------------------------------------------------*/
+
+.over-anneke {
+  margin-top: 100px;
+  display: flex;
+  width: 100vw;
+  justify-content: center;
+}
+
+.box {
+  width: 100vw;
+  background-color: #9ab079;
+  padding: 3vw;
+  color: white;
+}
+
+.box h3 {
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  text-align: center;
+  font-size: 30px;
+  height: auto;
+}
+
+.about-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  width: 60vw;
+  background-color: #f1f1f1;
+  font-size: 25px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  color: black;
+  border-radius: 20px;
+  padding: 3vw;
+  margin: 0 auto;
+}
+
+.box h4 {
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  text-align: center;
+  padding-bottom: 5px;
+  border-bottom: 3px solid #9ab079;
+  font-size: 30px;
+}
+
+.box .line {
+  background-color: #f1f1f1;
+  width: 12vw;
+  height: 3px;
+  margin: 0 auto;
+  margin-bottom: 1vw;
+  display: block;
+}
+
+.about-box ul{
+  margin-bottom: 15px;
+  line-height: 35.5px;
+  list-style: disc inside;
+}
+
+.about-box p{
+  margin-bottom: 20px;
+  max-width: 90%;
+}
+
+.about-box h5{
+  background-color: #c5e09c;
+  border-radius: 10px;
+  width:fit-content;
+  padding: 5px;
+  margin-bottom: 3px;
+}
+
+.about-box img{
+  display: block;
+  border-radius: 20px;
+  
+}
+
+/*-------------------------------------------------------------------*/
+/*-------------------------------------------------------------------*/
+/*-----------------------------PORTFOLIO-----------------------------*/
+/*-------------------------------------------------------------------*/
+/*-------------------------------------------------------------------*/
+
+.portfolio{
+  width: 80%;
+  margin: 100px auto;
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 20px;
+}
+
+.portfolio h3{
+  font-size: 30px;
+  margin-bottom: 20px;
+  text-align: center;
+  padding: 20px 10px;
+  background-color: #9ab079;
+  border-radius: 20px;
+  color: white;
+}
+
+.opdracht{
+  display: flex;
+  gap: 2%;
+}
+
+.foto-map{
+  display: flex;
+  justify-content: space-between;
+}
+
+.section1 {
+  width: 60%;
+}
+
+.section1 img{
+  width: 23%;
+}
+
+.section2{
+  width: 40%;
+  display: flex;
+  align-items: center;
+}
+
+.section2 p{
+  line-height: 25px;
+}
+
+/*-------------------------------------------------------------------*/
+/*-------------------------------------------------------------------*/
+/*-----------------------------SCULPTURES----------------------------*/
+/*-------------------------------------------------------------------*/
+/*-------------------------------------------------------------------*/
+
+.sculpturen {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.sculpturen h3{
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 30px;
+  text-align: center;
+  padding: 30px 20px;
+  background-color: #9ab079;
+  border-radius: 20px;
+  color: white;
+  margin-bottom: 20px;
+  -webkit-box-shadow: 10px 24px 39px -32px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 10px 24px 39px -32px rgba(0, 0, 0, 0.75);
+  box-shadow: 10px 24px 39px -32px rgba(0, 0, 0, 0.75);
+}
+
